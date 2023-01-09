@@ -961,11 +961,11 @@ Modifier  |  Description
 `->from($integer)`  |  Set the starting value of an auto-incrementing field (MySQL / PostgreSQL).
 `->invisible()`  |  Make the column "invisible" to `SELECT *` queries (MySQL).
 `->nullable($value = true)`  |  Allow NULL values to be inserted into the column.
-`->storedAs($expression)`  |  Create a stored generated column (MySQL / PostgreSQL).
+`->storedAs($expression)`  |  Create a stored generated column (MySQL/PostgreSQL/SQLite).
 `->unsigned()`  |  Set INTEGER columns as UNSIGNED (MySQL).
 `->useCurrent()`  |  Set TIMESTAMP columns to use CURRENT_TIMESTAMP as default value.
-`->useCurrentOnUpdate()`  |  Set TIMESTAMP columns to use CURRENT_TIMESTAMP when a record is updated.
-`->virtualAs($expression)`  |  Create a virtual generated column (MySQL).
+`->useCurrentOnUpdate()`  |  Set TIMESTAMP columns to use CURRENT_TIMESTAMP when a record is updated (MySQL).
+`->virtualAs($expression)`  |  Create a virtual generated column (MySQL/PostgreSQL/SQLite).
 `->generatedAs($expression)`  |  Create an identity column with specified sequence options (PostgreSQL).
 `->always()`  |  Defines the precedence of sequence values over input for an identity column (PostgreSQL).
 `->isGeometry()`  |  Set spatial column type to `geometry` - the default type is `geography` (PostgreSQL).
